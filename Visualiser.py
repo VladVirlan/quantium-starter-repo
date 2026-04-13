@@ -64,7 +64,7 @@ app.layout = html.Div(
         "padding": "40px"
     },
     children=[
-
+        # Header
         html.H1(
             "Soul Foods",
             style={
@@ -84,6 +84,7 @@ app.layout = html.Div(
             }
         ),
 
+        # Visualisation
         html.Div(
             dcc.Graph(id="line-graph", figure=fig),
             style={
@@ -95,6 +96,7 @@ app.layout = html.Div(
             }
         ),
 
+        # Radio
         html.Div(
             [
                 html.P(
